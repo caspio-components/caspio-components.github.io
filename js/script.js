@@ -36,7 +36,7 @@ jQuery(function() {
 		navSlide();
 		megamenu();
 		topPadding(); //this must be below megamenu()
-		subpageUrl();
+		// subpageUrl();
 		tip()
 	});
 
@@ -656,12 +656,12 @@ jQuery(function() {
 	/*============================================
 	  URL REWRITE
 	==============================================*/
-	subpageUrl();
+	// subpageUrl();
 	function subpageUrl(){
 		if(url == github) {
 			$('a').each(function(){
 				var a = $(this).attr("href")
-				$(this).attr("href", github + "caspio-components/" + a);
+				$(this).attr("href", github + a);
 			});
 		}//  else {
 		// 	$('a').each(function(){
@@ -727,10 +727,10 @@ var urlFix = function() {
 	currUrl = window.location.href;
 	pathUrl = window.location.pathname;
 	filename = pathUrl.substring(pathUrl.lastIndexOf('/')+1);
-	github = 'https://lhorainemarinas.github.io/';
+	github = 'https://caspio-components.github.io/sites';
 	if(url == github) {
-		$("#includeNav").load(url + "/caspio-components/template/nav.html");
-		$("#includeNav2").load(url + "/caspio-components/template/nav2.html");
+		$("#includeNav").load(url + "/template/nav.html");
+		$("#includeNav2").load(url + "/template/nav2.html");
 	} else {
 		$("#includeNav").load(url + "/template/nav.html");
 		$("#includeNav2").load(url + "/template/nav2.html");
