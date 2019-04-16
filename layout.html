@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Caspio Layout</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/files.css">
+	<link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+	<div class="menu-overlay hidden-sm hidden-xs"></div>
+	<nav class="navbar navbar-top navbar-fixed-top" id="includeNav"></nav>
+	
+	<section class="subpage-banner b445 text-center overlay-black ptb100 font-white fix" style="background-image: url('img/banner-2.jpg')">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Layout</h1>
+					<p>We present here some components and options for laying out your Bootstrap project, including wrapping containers, a powerful grid system, a flexible media object, and responsive utility classes.</p>  
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-white">
+		<div class="container">
+			<div class="row text-center mb40">
+				<h2>Container</h2>
+				<p>Containers are the most basic layout element in Bootstrap and are required when using our default grid system. Choose from a responsive, fixed-width container (meaning its max-width changes at each breakpoint) or fluid-width (meaning it’s 100% wide all the time). <br>While containers can be nested, most layouts do not require a nested container.</p>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="layout-blocks bg-lightlime h50"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10">
+					<div class="layout-blocks bg-lightblue h100"></div>
+				</div>
+				<div class="col-md-2">
+					<div class="layout-blocks bg-lightorange h100"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="code-wrap">
+						<div class="code-wrap-tabs">
+							<a href="#codeHtml" data-toggle="tab" role="tab" class="active">html</a>
+							<!-- <a href="#codeCss" data-toggle="tab" role="tab"></a> -->
+							<!-- <a href="#codeJquery" data-toggle="tab" role="tab">jquery</a> -->
+							<!-- <a class="btn orange pull-right" href="img/logo/caspio-logo-black.svg" download>Download psd</a> -->
+						</div>
+						<div class="tab-content">
+							<div class="code-wrap-content tab-pane active" id="codeHtml" role="tabpanel">
+								<pre class="language-html">
+									<code class="language-html">
+&lt;section>
+	&lt;div class="container">
+		&lt;div class="row">
+			&lt;div class="col-md-12">
+				&lt;div class="layout-blocks bg-lightlime h50">&lt;/div>
+			&lt;/div>
+		&lt;/div>
+		&lt;div class="row">
+			&lt;div class="col-md-10">
+				&lt;div class="layout-blocks bg-lightblue h100">&lt;/div>
+			&lt;/div>
+			&lt;div class="col-md-2">
+				&lt;div class="layout-blocks bg-lightorange h100">&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-lightergray">
+		<div class="container-fluid">
+			<div class="row text-center mb40">
+				<h2>Container Fluid</h2>
+				<p>Use <span class="font-orange">.container-fluid</span> for a full-width container, spanning the entire width of the viewport.</p>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="layout-blocks bg-lightlime h50"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10">
+					<div class="layout-blocks bg-lightblue h100"></div>
+				</div>
+				<div class="col-md-2">
+					<div class="layout-blocks bg-lightorange h100"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="code-wrap">
+						<div class="code-wrap-tabs">
+							<a href="#fluidCodeHtml" data-toggle="tab" role="tab" class="active">html</a>
+							<!-- <a href="#codeCss" data-toggle="tab" role="tab">css</a>
+							<a href="#codeJquery" data-toggle="tab" role="tab">jquery</a> -->
+							<!-- <a class="btn orange pull-right" href="img/logo/caspio-logo-black.svg" download>Download psd</a> -->
+						</div>
+						<div class="tab-content">
+							<div class="code-wrap-content tab-pane active" id="fluidCodeHtml" role="tabpanel">
+								<pre>
+									<code class="language-html">
+&lt;section>
+	&lt;div class="container-fluid">
+		&lt;div class="row">
+			&lt;div class="col-md-12">
+				&lt;div class="layout-blocks bg-lightlime h50">&lt;/div>
+			&lt;/div>
+		&lt;/div>
+		&lt;div class="row">
+			&lt;div class="col-md-10">
+				&lt;div class="layout-blocks bg-lightblue h100">&lt;/div>
+			&lt;/div>
+			&lt;div class="col-md-2">
+				&lt;div class="layout-blocks bg-lightorange h100">&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-white">
+		<div class="container">
+			<div class="row text-center mb40">
+				<h2>Responsive breakpoints</h2>
+				<p>Since Bootstrap is developed to be mobile first, we use a handful of media queries to create sensible breakpoints for our layouts and interfaces. These breakpoints are mostly based on minimum viewport widths and allow us to scale up elements as the viewport changes.</p>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="code-wrap">
+						<div class="code-wrap-tabs">
+							<a href="#responsiveCodeCss" data-toggle="tab" role="tab" class="active">CSS</a>
+							<!-- <a class="btn orange pull-right" href="img/logo/caspio-logo-black.svg" download>Download psd</a> -->
+						</div>
+						<div class="tab-content">
+							<div class="code-wrap-content tab-pane active" id="responsiveCodeCss" role="tabpanel">
+								<pre>
+									<code class="language-css">
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<link rel='dns-prefetch' href='//fast.wistia.net' />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-markup.js"></script> -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type='text/javascript' src='https://fast.wistia.net/assets/external/E-v1.js?ver=1'></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+	<!-- <script type="text/javascript" src="../js/numscroll.js"></script> -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+	<script type="text/javascript" src="js/prism.js"></script>
+	<script type="text/javascript" src="js/autoheight.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

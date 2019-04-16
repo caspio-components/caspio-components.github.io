@@ -1,0 +1,4 @@
+.table > tbody > tr > td:last-child,
+.table > tbody > tr > th:first-child {
+	text-align: center;
+}
