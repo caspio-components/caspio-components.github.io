@@ -727,7 +727,7 @@ var urlFix = function() {
 	currUrl = window.location.href;
 	pathUrl = window.location.pathname;
 	filename = pathUrl.substring(pathUrl.lastIndexOf('/')+1);
-	github = 'https://caspio-components.github.io/sites';
+	github = 'https://caspio-components.github.io/';
 	if(url == github) {
 		$("#includeNav").load(url + "/template/nav.html");
 		$("#includeNav2").load(url + "/template/nav2.html");
