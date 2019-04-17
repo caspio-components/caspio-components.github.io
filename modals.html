@@ -5,17 +5,17 @@
 	<title>Caspio Buttons</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/css/files.css">
+	<link rel="stylesheet" href="/css/layout.css">
 </head>
 <body>
 	<div class="menu-overlay hidden-sm hidden-xs"></div>
 	<nav class="navbar navbar-top navbar-fixed-top" id="includeNav"></nav>
-	<section>
+	<section class="subpage-banner b445 text-center overlay-black ptb100 font-white fix" style="background-image: url('img/banner-3.jpg')">
 		<div class="container">
 			<div class="row">
-				<p class="desc">&lt;h1 tag with description&gt;</p>
-				<div class="col-md-12 title-desc text-center">
-					<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
-					<p class="w960">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae placeat dignissimos reprehenderit earum repudiandae, maiores adipisci ipsum quisquam fugiat explicabo debitis cupiditate perferendis, corporis aut vero dolores. Natus sapiente dignissimos explicabo earum. Architecto excepturi quis fugit unde eos est fuga, repellat voluptatem. Ratione quam inventore optio, minima, doloribus fugiat obcaecati quaerat ea possimus veniam quod nemo voluptate, voluptates. Tempore debitis nisi similique cupiditate ad minima, fugit iste eligendi perspiciatis, quos officia nostrum dignissimos delectus, blanditiis. Cupiditate laboriosam eligendi quia debitis id neque quae amet nihil deserunt consequuntur itaque enim, labore porro at non voluptates numquam autem. Nostrum eligendi, asperiores officia!</p>
+				<div class="col-md-12">
+					<h1>Modals</h1>
+					<p class="w960">Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
 				</div>
 			</div>
 		</div>
@@ -24,7 +24,6 @@
 	<section>
 		<div class="container">
 			<div class="row">
-				<p class="desc">&lt;Modals&gt;</p>
 				<div class="col-md-12">
 					
 					<!-- START OF DEFAULT MODAL -->
@@ -60,7 +59,19 @@
 						</div>
 					</div>
 					<!-- END OF COOKIES MODAL -->
-
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bg-lightergray">
+		<div class="container">
+			<div class="row mb40">
+				<div class="col-md-12 text-center">
+					<h2>Wistia video popup</h2>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-12">
 					<!-- START OF WISTIA MODAL -->
 					<button type="button" class="btn green" data-toggle="modal" data-target="#wistiaModal">Wistia Video Modal</button>
 					<div class="modal fade modal-vid" tabindex="-1" role="dialog" id="wistiaModal" aria-labelledby="wistiaModal">
@@ -70,21 +81,21 @@
 									<div class="wistia_embed wistia_async_lqdusrvh9q videoFoam=true" style="width:100%;" id="my_video">&nbsp;</div>
 								</div>
 								<div class="modal-footer">
-									<p>Spread the word!</p>
+									<p class="mb0">Spread the word!</p>
 									<div class="modal-sns">
-										<a type="button" class="btn btn-sns btn-fb">
+										<a type="button" class="btn btn-sns btn-fb" href="https://www.facebook.com/caspioinc">
 											<i class="fa fa-facebook"></i>
 										</a>
 										<!--Twitter-->
-										<a type="button" class="btn btn-sns btn-tweet">
+										<a type="button" class="btn btn-sns btn-tweet" href="https://twitter.com/Caspio">
 										  <i class="fa fa-twitter"></i>
 										</a>
 										<!--Google +-->
-										<a type="button" class="btn btn-sns btn-yt">
+										<a type="button" class="btn btn-sns btn-yt" href="https://www.youtube.com/user/CaspioInc">
 											<i class="fa fa-youtube-play"></i>
 										</a>
 										<!--Linkedin-->
-										<a type="button" class="btn btn-sns btn-lin">
+										<a type="button" class="btn btn-sns btn-lin" href="https://www.linkedin.com/company/caspio-inc">
 											<i class="fa fa-linkedin"></i>
 										</a>
 									</div>
@@ -96,16 +107,301 @@
 					<!-- END OF WISTIA MODAL -->
 				</div>
 			</div>
+			<div class="row mb40">
+				<div class="col-md-12">
+					<div class="code-wrap w100p">
+						<div class="code-wrap-tabs">
+							<a href="#codeHtml" data-toggle="tab" role="tab" class="active">html</a>
+							<!-- <a href="#codeCss" data-toggle="tab" role="tab"></a> -->
+							<a href="#codeJquery" data-toggle="tab" role="tab">jquery</a>
+							<!-- <a class="btn orange pull-right" href="img/logo/caspio-logo-black.svg" download>Download psd</a> -->
+						</div>
+						<div class="tab-content">
+							<div class="code-wrap-content tab-pane fade in active" id="codeHtml" role="tabpanel">
+								<pre class="language-html">
+									<code class="language-html">
+&lt;button type="button" class="btn green" data-toggle="modal" data-target="#wistiaModal">Wistia Video Modal&lt;/button>
+&lt;div class="modal fade modal-vid" tabindex="-1" role="dialog" id="wistiaModal" aria-labelledby="wistiaModal">
+	&lt;div class="modal-dialog modal-lg" role="document">
+		&lt;div class="modal-content text-center">
+			&lt;div class="modal-body p0">
+				&lt;div class="wistia_embed wistia_async_lqdusrvh9q videoFoam=true" style="width:100%;" id="my_video">&nbsp;&lt;/div>
+			&lt;/div>
+			&lt;div class="modal-footer">
+				&lt;p class="mb0">Spread the word!&lt;/p>
+				&lt;div class="modal-sns">
+					&lt;a type="button" class="btn btn-sns btn-fb" href="https://www.facebook.com/caspioinc">
+						&lt;i class="fa fa-facebook">&lt;/i>
+					&lt;/a>
+					&lt;!--Twitter-->
+					&lt;a type="button" class="btn btn-sns btn-tweet" href="https://twitter.com/Caspio">
+					  &lt;i class="fa fa-twitter">&lt;/i>
+					&lt;/a>
+					&lt;!--Google +-->
+					&lt;a type="button" class="btn btn-sns btn-yt" href="https://www.youtube.com/user/CaspioInc">
+						&lt;i class="fa fa-youtube-play">&lt;/i>
+					&lt;/a>
+					&lt;!--Linkedin-->
+					&lt;a type="button" class="btn btn-sns btn-lin" href="https://www.linkedin.com/company/caspio-inc">
+						&lt;i class="fa fa-linkedin">&lt;/i>
+					&lt;/a>
+				&lt;/div>
+				&lt;button type="button" class="btn blue btn-m" data-dismiss="modal">Close&lt;/button>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/div>
+									</code>
+								</pre>
+							</div>
+							<div class="code-wrap-content tab-pane fade" id="codeCss" role="tabpanel"></div>
+							<div class="code-wrap-content tab-pane fade" id="codeJquery" role="tabpanel">
+								<pre class="language-js">
+									<code class="language-js">
+var bannerVideo = Wistia.api('lqdusrvh9q');
+window.wistiaInit = function(W) {
+	W.options("my_video", {
+		autoPlay: true
+	});
+};
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="alert alert-primary" role="alert">
+						Note to all <strong>Developers</strong>
+					</div>
+					<ul>
+						<li>Add the following links to your page: <br> <strong>&lt;link rel='dns-prefetch' href='//fast.wistia.net' /&gt;</strong><br><strong>&lt;script type='text/javascript' src='https://fast.wistia.net/assets/external/E-v1.js?ver=1'>&lt;/script></strong></li>
+						<li>Please make sure that you link the <strong>Bootstrap 3.3.7 js file</strong> at the bottom of the &lt;body&gt; tag.</li>
+						<li>Check if the Social media link is correct.</li>
+						<li>If there are multiple Wistia video popup on a single page, please make sure to update the <span class="font-lime font-900">ID</span> and <span class="font-orange font-900">VIDEO ID</span>: <br><br><span class="font-blue font-900">HTML</span><br>&lt;div class="wistia_embed wistia_async_<strong class="font-orange">lqdusrvh9q</strong> videoFoam=true" style="width:100%;" id="<strong class="font-lime">my_video</strong>"&gt;&nbsp;&lt;/div&gt; <br><br><span class="font-blue font-900">JQUERY</span><br>var bannerVideo = Wistia.api('<strong class="font-orange">lqdusrvh9q</strong>'); <br>window.wistiaInit = function(W) {<br>&emsp;W.options("<strong class="font-lime">my_video</strong>", {<br>&emsp;&emsp;autoPlay: true<br>&emsp;});<br>};</li> </ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<table class="table">
+						<thead class="bg-lightorange font-white table-border text-left">
+							<tr>
+								<th scope="col">Wistia Options name</th>
+								<th scope="col">Values</th>
+								<th scope="col">Descriptions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>autoPlay</td>
+								<td>true</td>
+								<td>The video will play as soon as it’s ready.</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>false</td>
+								<td>This is Default</td>
+							</tr>
+							<tr>
+								<td>controlsVisibleOnLoad</td>
+								<td>true</td>
+								<td>Controls like the big play button, playbar, volume, etc. will be visible upon page load</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>false</td>
+								<td>This is Default</td>
+							</tr>
+							<tr>
+								<td>copyLinkAndThumbnailEnabled</td>
+								<td>true</td>
+								<td>This is Default</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>false</td>
+								<td>Once your video is embedded on a webpage, the option to “Copy Link and Thumbnail” when you right click on your video will be removed. <br>You will not be able to create a thumbnail that links to the page where the video is embedded. </td>
+							</tr>
+							<tr>
+								<td>doNotTrack</td>
+								<td>true</td>
+								<td>Data for each viewing session is tracked and reported back to the Wistia servers for display in heatmaps and aggregation graphs.</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>false</td>
+								<td>This is Default.</td>
+							</tr>
+							<tr>
+								<td>email</td>
+								<td>&lt;email&gt;</td>
+								<td>Associate an email with this video’s viewing session. This is equivalent to running video.email(email) immediately after initialization.</td>
+							</tr>
+							<tr>
+								<td>endVideoBehavior</td>
+								<td>default</td>
+								<td>The video stays on the last frame.</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>reset</td>
+								<td>The video shows the thumbnail and controls if they are set to be visible on load.</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>loop</td>
+								<td>The video plays again from the beginning.</td>
+							</tr>
+							<tr>
+								<td>fullscreenButton</td>
+								<td>true</td>
+								<td>The fullscreen button will be available as a video control.</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>false</td>
+								<td>This is the Default</td>
+							</tr>
+							<tr>
+								<td>muted</td>
+								<td>true</td>
+								<td>The video will start in a muted state.</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>false</td>
+								<td>This is the Default</td>
+							</tr>
+							<tr>
+								<td>playbackRateControl</td>
+								<td>true</td>
+								<td>This is the Default</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>false</td>
+								<td>The playback speed controls in the settings menu will be hidden.</td>
+							</tr>
+							<tr>
+								<td>playbar</td>
+								<td>true</td>
+								<td>The playbar — which includes the playhead, current time, and scrubbing functionality — will be available</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>false</td>
+								<td>It is hidden</td>
+							</tr>
+							<tr>
+								<td>playButton</td>
+								<td>true</td>
+								<td>The big play button control will appear in the center of the video before play.</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>false</td>
+								<td>This is the Default</td>
+							</tr>
+							<tr>
+								<td>playerColor</td>
+								<td>#ffffff</td>
+								<td>Sets the player's theme color.</td>
+							</tr>
+							<tr>
+								<td>playlistLinks</td>
+								<td>&lt;URL&gt;</td>
+								<td>This option lets you associate specially crafted links on your page with a video, turning them into a playlist.</td>
+							</tr>
+							<tr>
+								<td>playlistLoop</td>
+								<td>true</td>
+								<td>It will embed the first video once the last video has finished.</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>false</td>
+								<td>This is Default</td>
+							</tr>
+							<tr>
+								<td>qualityMax</td>
+								<td>224, 360, 540, 720, 1080, 3840</td>
+								<td>This allows you to specify the maximum quality the video will play at. Wistia will still run bandwidth checks to test for speed, and play the highest quality version at or below the set maximum.</td>
+							</tr>
+							<tr>
+								<td>settingsControl</td>
+								<td>true</td>
+								<td>The settings control will be available. This will allow viewers to control the quality and playback speed of the video.</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>false</td>
+								<td>This is Default</td>
+							</tr>
+							<tr>
+								<td>smallPlayButton</td>
+								<td>true</td>
+								<td>The small play button control will be available.</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>false</td>
+								<td>This is the Default</td>
+							</tr>
+							<tr>
+								<td>volume</td>
+								<td>0</td>
+								<td>Mutes the video on load</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>1</td>
+								<td>Set the volume of the video</td>
+							</tr>
+							<tr>
+								<td>volumeControl</td>
+								<td>true</td>
+								<td>A volume control is available over the video.</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>false</td>
+								<td>This is the Default</td>
+							</tr>
+							<tr>
+								<td>buttonBackground</td>
+								<td>#ffffff</td>
+								<td>The hex color of the button. Defaults to the player color.</td>
+							</tr>
+							<tr>
+								<td>autoSize</td>
+								<td>true</td>
+								<td>sets a font-size and line-height for the call to action based on the height of the video.</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>false</td>
+								<td>This is the Default</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
 		</div>
 	</section>
 	
 
 	<link rel='dns-prefetch' href='//fast.wistia.net' />
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-markup.js"></script> -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type='text/javascript' src='https://fast.wistia.net/assets/external/E-v1.js?ver=1'></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
 	<!-- <script type="text/javascript" src="/js/numscroll.js"></script> -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+	<script type="text/javascript" src="/js/prism.js"></script>
 	<script type="text/javascript" src="/js/autoheight.js"></script>
 	<script type="text/javascript" src="/js/script.js"></script>
 </body>
