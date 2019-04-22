@@ -1719,8 +1719,8 @@ body.scrollable {
 .modal-frame.modal-bottom .modal-content .modal-body p,
 .modal-vid .modal-content .modal-footer p {
 	margin-right: 15px;
+	margin-bottom: 0;
 }
-
 .modal-vid .modal-content .modal-footer .modal-sns {
 	margin-right: 30px;
 }

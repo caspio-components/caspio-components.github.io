@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Caspio Buttons</title>
+	<title>Caspio Modals</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/css/files.css">
 	<link rel="stylesheet" href="/css/layout.css">
@@ -20,12 +20,15 @@
 			</div>
 		</div>
 	</section>
-
 	<section>
 		<div class="container">
+			<div class="row mb40">
+				<div class="col-md-12 text-center">
+					<h2>Default Modal</h2>
+				</div>
+			</div>
 			<div class="row">
-				<div class="col-md-12">
-					
+				<div class="col-md-12 text-center">
 					<!-- START OF DEFAULT MODAL -->
 					<button type="button" class="btn blue" data-toggle="modal" data-target="#defaultModal">Default modal</button>
 					<div class="modal fade" tabindex="-1" role="dialog" id="defaultModal" aria-labelledby="defaultModal">
@@ -45,7 +48,159 @@
 						</div>
 					</div>
 					<!-- END OF DEFAULT MODAL -->
-
+				</div>
+			</div>
+			<div class="row mb40">
+				<div class="col-md-12">
+					<div class="code-wrap w100p">
+						<div class="code-wrap-tabs">
+							<ul>
+								<li class="active"><a href="#defaultCodeHtml" data-toggle="tab" role="tab">html</a></li>
+								<li><a href="#defaultCodeCss" data-toggle="tab" role="tab">css</a></li>
+								<!-- <li><a href="#codeJquery" data-toggle="tab" role="tab">jquery</a></li> -->
+							</ul>
+							<!-- <a class="btn orange pull-right" href="img/logo/caspio-logo-black.svg" download>Download psd</a> -->
+						</div>
+						<div class="tab-content">
+							<div class="code-wrap-content tab-pane fade in active" id="defaultCodeHtml" role="tabpanel">
+								<pre class="language-html">
+									<code class="language-html">
+&lt;button type="button" class="btn blue" data-toggle="modal" data-target="#defaultModal">Default modal&lt;/button>
+&lt;div class="modal fade" tabindex="-1" role="dialog" id="defaultModal" aria-labelledby="defaultModal">
+	&lt;div class="modal-dialog" role="document">
+		&lt;div class="modal-content text-center">
+			&lt;div class="modal-header">
+				&lt;p>Be always up to date&lt;/p>
+			&lt;/div>
+			&lt;div class="modal-body">
+				&lt;p>Do you want to receive the push notification about the newest posts?&lt;/p>
+			&lt;/div>
+			&lt;div class="modal-footer">
+				&lt;button type="button" class="btn blue btn-m">YES&lt;/button>
+				&lt;button type="button" class="btn blue btn-m btn-line" data-dismiss="modal">NO&lt;/button>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/div>
+									</code>
+								</pre>
+							</div>
+							<div class="code-wrap-content tab-pane fade" id="defaultCodeCss" role="tabpanel">
+								<pre class="language-css">
+									<code class="language-css">
+body.scrollable {
+	overflow-y: auto;
+}
+.fade {
+	-webkit-transition: opacity .15s linear;
+	-ms-transition: opacity .15s linear;
+	-o-transition: opacity .15s linear;
+	transition: opacity .15s linear;
+}
+@media screen and (prefers-reduced-motion:reduce) {
+	.fade {
+		transition: none;
+	}
+}
+.modal-dialog {
+	top: 40%;
+}
+.modal.fade .modal-dialog {
+	transition: -webkit-transform .3s ease-out;
+	transition: transform .3s ease-out;
+	transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+	-webkit-transform: translate(0,-50px);
+	transform: translate(0,-50px)
+}
+@media screen and (prefers-reduced-motion:reduce) {
+	.modal.fade .modal-dialog {
+		transition: none
+	}
+}
+.modal.show .modal-dialog {
+	-webkit-transform: none;
+	transform: none
+}
+.modal.in .modal-dialog,
+.modal-dialog {
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.modal-content {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	pointer-events: auto;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 0;
+	border-radius: 0;
+	outline: 0;
+	color: #616161;
+}
+.modal.modal-dark .modal-content .modal-body{
+	background: #20272B;
+}
+.modal-header {
+	padding: 20px;
+	background: #027faa;
+	border: 0;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+.modal-header p {
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 0;
+}
+.modal-body {
+	padding: 24px;
+	position: relative;
+	font-size: 16px;
+}
+.modal-footer {
+	text-align: center;
+	padding: 16px;
+}
+.modal-footer .btn+.btn {
+	margin: 0 10px 10px 0;
+}
+.modal-frame.modal-bottom .modal-content .modal-body *,
+.modal-vid .modal-content .modal-footer * {
+	display: inline-block;
+}
+.modal-frame.modal-bottom .modal-content .modal-body p,
+.modal-vid .modal-content .modal-footer p {
+	margin-right: 15px;
+	margin-bottom: 0;
+}
+.modal-vid .modal-content .modal-footer .modal-sns {
+	margin-right: 30px;
+}
+									</code>
+								</pre>
+							</div>
+							<div class="code-wrap-content tab-pane fade" id="codeJquery" role="tabpanel"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bg-lightergray">
+		<div class="container">
+			<div class="row mb40">
+				<div class="col-md-12 text-center">
+					<h2>Cookies Modal</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
 					<!-- START OF COOKIES MODAL -->
 					<button type="button" class="btn orange" data-toggle="modal" data-target="#cookiesModal" data-backdrop="false">Cookies Modal</button>
 					<div class="modal fade bottom" tabindex="-1" role="dialog" id="cookiesModal" aria-labelledby="cookiesModal">
@@ -61,9 +216,70 @@
 					<!-- END OF COOKIES MODAL -->
 				</div>
 			</div>
+			<div class="row mb40">
+				<div class="col-md-12">
+					<div class="code-wrap w100p">
+						<div class="code-wrap-tabs">
+							<ul>
+								<li class="active"><a href="#defaultCodeHtml" data-toggle="tab" role="tab">html</a></li>
+								<li><a href="#defaultCodeCss" data-toggle="tab" role="tab">css</a></li>
+								<!-- <li><a href="#codeJquery" data-toggle="tab" role="tab">jquery</a></li> -->
+							</ul>
+							<!-- <a class="btn orange pull-right" href="img/logo/caspio-logo-black.svg" download>Download psd</a> -->
+						</div>
+						<div class="tab-content">
+							<div class="code-wrap-content tab-pane fade in active" id="defaultCodeHtml" role="tabpanel">
+								<pre class="language-html">
+									<code class="language-html">
+&lt;button type="button" class="btn orange" data-toggle="modal" data-target="#cookiesModal" data-backdrop="false">Cookies Modal&lt;/button>
+&lt;div class="modal fade bottom" tabindex="-1" role="dialog" id="cookiesModal" aria-labelledby="cookiesModal">
+	&lt;div class="modal-dialog modal-frame modal-bottom" role="document">
+		&lt;div class="modal-content text-center">
+			&lt;div class="modal-body">
+				&lt;p>We use cookies to improve your website experience&lt;/p>
+				&lt;a type="button" class="btn blue btn-m" data-dismiss="modal">Ok, Thanks!&lt;/a>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/div>
+									</code>
+								</pre>
+							</div>
+							<div class="code-wrap-content tab-pane fade" id="defaultCodeCss" role="tabpanel">
+								<pre class="language-css">
+									<code class="language-css">
+.modal .modal-frame {
+	position: absolute;
+	margin: 0;
+	width: 100%;
+	max-width: 100%;
+}
+.modal .modal-dialog.modal-top {
+	top: 0;
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
+}
+.modal .modal-dialog.modal-bottom {
+	top: auto;
+	bottom: 0;
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
+}
+									</code>
+								</pre>
+							</div>
+							<div class="code-wrap-content tab-pane fade" id="codeJquery" role="tabpanel"></div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
-	<section class="bg-lightergray">
+	<section>
 		<div class="container">
 			<div class="row mb40">
 				<div class="col-md-12 text-center">
@@ -111,13 +327,15 @@
 				<div class="col-md-12">
 					<div class="code-wrap w100p">
 						<div class="code-wrap-tabs">
-							<a href="#codeHtml" data-toggle="tab" role="tab" class="active">html</a>
-							<!-- <a href="#codeCss" data-toggle="tab" role="tab"></a> -->
-							<a href="#codeJquery" data-toggle="tab" role="tab">jquery</a>
+							<ul>
+								<li class="active"><a href="#wistiaCodeHtml" data-toggle="tab" role="tab">html</a></li>
+								<!-- <li><a href="#bannerCodeCss" data-toggle="tab" role="tab">css</a></li> -->
+								<li><a href="#wistiaCodeJquery" data-toggle="tab" role="tab">jquery</a></li>
+							</ul>
 							<!-- <a class="btn orange pull-right" href="img/logo/caspio-logo-black.svg" download>Download psd</a> -->
 						</div>
 						<div class="tab-content">
-							<div class="code-wrap-content tab-pane fade in active" id="codeHtml" role="tabpanel">
+							<div class="code-wrap-content tab-pane fade in active" id="WistiaCodeHtml" role="tabpanel">
 								<pre class="language-html">
 									<code class="language-html">
 &lt;button type="button" class="btn green" data-toggle="modal" data-target="#wistiaModal">Wistia Video Modal&lt;/button>
@@ -154,8 +372,8 @@
 									</code>
 								</pre>
 							</div>
-							<div class="code-wrap-content tab-pane fade" id="codeCss" role="tabpanel"></div>
-							<div class="code-wrap-content tab-pane fade" id="codeJquery" role="tabpanel">
+							<div class="code-wrap-content tab-pane fade" id="wistiaCodeCss" role="tabpanel"></div>
+							<div class="code-wrap-content tab-pane fade" id="wistiaCodeJquery" role="tabpanel">
 								<pre class="language-js">
 									<code class="language-js">
 var bannerVideo = Wistia.api('lqdusrvh9q');
