@@ -3904,33 +3904,44 @@ section.bottom-pointer.bottom-pointer-blue:after{
 .op02 {opacity: 0.2;}
 .op01 {opacity: 0.1;}
 
-.border-white {border-color: #fff;border-style: solid;}
+.border-white {border-color: #FFF;border-style: solid;}
 .border-black {border-color: #484848;border-style: solid;}
 .border-darkestblue {border-color: #005883;border-style: solid;}
 .border-darkblue {border-color: #027FAA;border-style: solid;}
-.border-blue {border-color: #1196ba;border-style: solid;}
-.border-lightblue {border-color: #3fcaeb;border-style: solid;}
-.border-lighterblue {border-color: #b3fbff;border-style: solid;}
+.border-blue {border-color: #1196BA;border-style: solid;}
+.border-lightblue {border-color: #3FCAEB;border-style: solid;}
+.border-lighterblue {border-color: #B3FBFF;border-style: solid;}
 .border-orange {border-color: #FF7610;border-style: solid;}
 .border-lightorange {border-color: #FF9750;border-style: solid;}
 .border-lime {border-color: #67B204;border-style: solid;}
 .border-lightlime {border-color: #96D32A;border-style: solid;}
-.border-darkgray {border-color: #20282B;border-style: solid;}
-.border-lightgray {border-color: #747D82;border-style: solid;}
+.border-cinder {border-color: #2028 2B;border-style: solid;}
+.border-regentgray {border-color: #747D82;border-style: solid;}
+.border-charcoal {border-color: #484848;border-style: solid;}
+.border-lightgray {border-color: #D2D2D2;border-style: solid;}
+.border-whitesmoke {border-color: #F7F7F7;border-style: solid;}
+.border-whisper {border-color: #E5E5E5;border-style: solid;}
+.border-vlightgray {border-color: #F2F2F2;border-style: solid;}
 
-.font-white {color: #fff;}
+
+.font-white {color: #FFF;}
 .font-black {color: #484848;}
 .font-darkestblue {color: #005883;}
 .font-darkblue {color: #027FAA;}
-.font-blue {color: #1196ba;}
-.font-lightblue {color: #3fcaeb;}
-.font-lighterblue {color: #b3fbff;}
+.font-blue {color: #1196BA;}
+.font-lightblue {color: #3FCAEB;}
+.font-lighterblue {color: #B3FBFF;}
 .font-orange {color: #FF7610;}
 .font-lightorange {color: #FF9750;}
 .font-lime {color: #67B204;}
 .font-lightlime {color: #96D32A;}
-.font-darkgray {color: #20282B;}
-.font-lightgray {color: #747D82;}
+.font-cinder {color: #2028 2B;}
+.font-regentgray {color: #747D82;}
+.font-charcoal {color: #484848;}
+.font-lightgray {color: #D2D2D2;}
+.font-whitesmoke {color: #F7F7F7;}
+.font-whisper {color: #E5E5E5;}
+.font-vlightgray {color: #F2F2F2;}
 
 .font-100 {font-weight:100;}
 .font-200 {font-weight:200;}
@@ -4059,20 +4070,24 @@ section.bottom-pointer.bottom-pointer-blue:after{
 .text-left {text-align:left;}
 .text-right {text-align:right;}
 
-section.bg-white, .bg-white {background-color: #fff;}
+section.bg-white, .bg-white {background-color: #FFF;}
 section.bg-black, .bg-black {background-color: #484848;}
 section.bg-darkestblue, .bg-darkestblue {background-color: #005883;}
 section.bg-darkblue, .bg-darkblue {background-color: #027FAA;}
-section.bg-blue, .bg-blue {background-color: #1196ba;}
-section.bg-lightblue, .bg-lightblue {background-color: #3fcaeb;}
-section.bg-lighterblue, .bg-lighterblue {background-color: #b3fbff;}
+section.bg-blue, .bg-blue {background-color: #1196BA;}
+section.bg-lightblue, .bg-lightblue {background-color: #3FCAEB;}
+section.bg-lighterblue, .bg-lighterblue {background-color: #B3FBFF;}
 section.bg-orange, .bg-orange {background-color: #FF7610;}
 section.bg-lightorange, .bg-lightorange {background-color: #FF9750;}
 section.bg-lime, .bg-lime {background-color: #67B204;}
 section.bg-lightlime, .bg-lightlime {background-color: #96D32A;}
-section.bg-darkgray, .bg-darkgray {background-color: #20282B;}
-section.bg-lightgray, .bg-lightgray {background-color: #747D82;}
-section.bg-lightergray, .bg-lightergray {background-color: #f2f2f2;}
+section.bg-cinder, .bg-cinder {background-color: #20282B;}
+section.bg-regentgray, .bg-regentgray {background-color: #747D82;}
+section.bg-charcoal, .bg-charcoal {background-color: #484848;}
+section.bg-lightgray, .bg-lightgray {background-color: #D2D2D2;}
+section.bg-whitesmoke, .bg-whitesmoke {background-color: #F7F7F7;}
+section.bg-whisper, .bg-whisper {background-color: #E5E5E5;}
+section.bg-vlightgray, .bg-vlightgray {background-color: #F2F2F2;}
 
 
 
